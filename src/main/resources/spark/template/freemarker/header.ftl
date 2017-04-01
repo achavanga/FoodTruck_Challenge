@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
 <link rel="stylesheet" type="text/css" href="/stylesheets/map-dimensions.css" />
 <!--<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBYcwGhKJ7XvbERHWX40HK3EkhX3pSypVs"></script>-->
-<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBYcwGhKJ7XvbERHWX40HK3EkhX3pSypVs"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYcwGhKJ7XvbERHWX40HK3EkhX3pSypVs"></script>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 <meta charset="utf-8">
  <style>
