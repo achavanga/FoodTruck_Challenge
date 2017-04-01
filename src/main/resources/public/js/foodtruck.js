@@ -35,7 +35,7 @@ $(function() {
           "$select": "*, distance_in_meters(location, 'POINT(" + pos.coords.longitude + " " + pos.coords.latitude + ")') AS range",
           "$order" : "range",
           "$limit" : 5,
-          "$$app_token": "AIzaSyBCBfbZNUQ4LYHsmeI90d72MyCc__9MAMY"
+          "$$app_token": "5i36j9wyiU0itZ0gcdSCmLjNb"
         }
       }).done(function(trucks) {
         $.each(trucks, function(idx, truck) {
@@ -45,7 +45,7 @@ $(function() {
             type: "GET",
             data: {
               "$select": "min(distance_in_meters(location, 'POINT(" + truck.location.coordinates.join(" ") + ")')) as distance",
-              "$$app_token": "AIzaSyBCBfbZNUQ4LYHsmeI90d72MyCc__9MAMY"
+              "$$app_token": "5i36j9wyiU0itZ0gcdSCmLjNb"
             },
           }).done(function(closest_tree) {
             // Add a marker for the location of the food truck
@@ -54,7 +54,7 @@ $(function() {
                             truck.location.coordinates[0]),
               map: map,
               animation: google.maps.Animation.DROP,
-              icon: "./img/foodtruck.png",
+              icon: "./foodtruck.png",
               title: truck.applicant,
               optimized: false
             });
