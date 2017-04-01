@@ -23,7 +23,7 @@
             </div>
             <!--<div class="container">-->
         <ul id="map"></ul>
-        <script src="/js/shady.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/js/foodtruck.js" type="text/javascript" charset="utf-8"></script>
    <!--
       <div class="alert alert-info text-center" role="alert">
       Chavanga Abel
