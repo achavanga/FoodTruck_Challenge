@@ -2,7 +2,7 @@
     background: #532F8C;
     color: white;
     padding-bottom: 10px;
-    height: 350px !important}
+    height: 250px !important}
 .jumbotron .btn-primary {
     background: #845ac7;
     border-color: #845ac7; }
@@ -26,6 +26,18 @@
 .jumbotron .lang-logo img {
     max-width: 100%; }
 .container {
-    height:240px !important;
+    height:200px !important;
 }
+#floating-panel {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        
+        text-align: center;
+        line-height: 30px;
+        padding-left: 10px;
+      }
 

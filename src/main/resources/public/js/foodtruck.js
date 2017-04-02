@@ -20,23 +20,23 @@ $(function() {
 //        title: "You are here!",
 //      });
       //map.setCenter(you.getPosition());
-      map.setZoom(16);
+      map.setZoom(13);
 
       $.ajax({
         url: "https://data.sfgov.org/resource/6a9r-agq8.json",
         type: "GET",
         data: {
-          "status" : "APPROVED"
-//          "$where": "expirationdate > '" + (new Date()).toISOString().replace(/Z/, '') + "'" 
-//            + " AND within_circle(location, 37.7577, -122.4376, 500)",
-////            + pos.coords.latitude + ", "
-////            + pos.coords.longitude + ", 500)",
-//          "$q": search,
+          "status" : "APPROVED",    
+            "$where": "expirationdate > '" + (new Date()).toISOString().replace(/Z/, '') + "'" ,
+//          "$where": " within_circle(location, 37.7577, -122.4376, 500)",
+//            + pos.coords.latitude + ", "
+//            + pos.coords.longitude + ", 500)",
+          "$q": search,
 //          "$select": "*, distance_in_meters(location, 'POINT(37.7577 -122.4376)') AS range",
 ////          "$select": "*, distance_in_meters(location, 'POINT(" + pos.coords.longitude + " " + pos.coords.latitude + ")') AS range",
 //          "$order" : "range",
-//          "$limit" : 5,
-//          "$$app_token": "5i36j9wyiU0itZ0gcdSCmLjNb"
+          "$limit" : 10,
+          "$$app_token": "5i36j9wyiU0itZ0gcdSCmLjNb"
         }
       }).done(function(trucks) {
         $.each(trucks, function(idx, truck) {
