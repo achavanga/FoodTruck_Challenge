@@ -6,7 +6,6 @@
 
 <body>
 
-  <#include "nav.ftl">
 
 <div class="container">
   ${message}

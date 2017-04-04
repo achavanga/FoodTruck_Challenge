@@ -9,7 +9,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <camel-version>2.11.1</camel-version>
     </properties>
+    
     <dependencies>
         <dependency>
             <groupId>com.sparkjava</groupId>
@@ -31,6 +33,68 @@
             <groupId>com.google.maps</groupId>
             <artifactId>google-maps-services</artifactId>
             <version>0.1.17</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>2.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-core</artifactId>
+            <version>${camel-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-cdi</artifactId>
+            <version>${camel-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-jaxb</artifactId>
+            <version>${camel-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-ejb</artifactId>
+            <version>${camel-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-jms</artifactId>
+            <version>${camel-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>7.0</version>
+            <type>jar</type>
+        </dependency>
+        <dependency> 
+            <groupId>org.sql2o</groupId> 
+            <artifactId>sql2o</artifactId> 
+            <version>1.5.4</version> 
+        </dependency> 
+        <dependency> 
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId> 
+            <version>9.4-1201-jdbc41</version> 
+        </dependency>
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-client</artifactId>
+            <version>1.8</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-json</artifactId>
+            <version>1.8</version>
+            <type>jar</type>
         </dependency>
     </dependencies>
     <build>
