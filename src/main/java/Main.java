@@ -26,11 +26,6 @@ public class Main {
 
         port(Integer.valueOf(System.getenv("PORT")));
 
-        HikariConfig config = new HikariConfig();
-        config.setJdbcUrl(System.getenv("JDBC_DATABASE_URL"));
-        final HikariDataSource dataSource = (config.getJdbcUrl() != null)
-                ? new HikariDataSource(config) : new HikariDataSource();
-
         staticFileLocation("/public");
         get("/hello", (req, res) -> "Hello World");
 
@@ -38,6 +33,16 @@ public class Main {
             Map<String, Object> attributes = new HashMap<>();
             attributes.put("message", "Hello World!");
 
+            return new ModelAndView(attributes, "index.ftl");
+        }, new FreeMarkerEngine());
+
+        HikariConfig config = new HikariConfig();
+        config.setJdbcUrl(System.getenv("JDBC_DATABASE_URL"));
+        final HikariDataSource dataSource = (config.getJdbcUrl() != null)
+                ? new HikariDataSource(config) : new HikariDataSource();
+
+        get("/db", (req, res) -> {
+            Map<String, Object> attributes = new HashMap<>();
             try (Connection connection = dataSource.getConnection()) {
                 Statement stmt = connection.createStatement();
                 stmt.executeUpdate("CREATE TABLE IF NOT EXISTS ticks (tick timestamp)");
@@ -50,14 +55,11 @@ public class Main {
                 }
 
                 attributes.put("results", output);
-
+                return new ModelAndView(attributes, "db.ftl");
             } catch (Exception e) {
                 attributes.put("message", "There was an error: " + e);
                 return new ModelAndView(attributes, "error.ftl");
             }
-
-            return new ModelAndView(attributes, "index.ftl");
         }, new FreeMarkerEngine());
-
     }
 }
