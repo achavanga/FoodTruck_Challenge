@@ -1,4 +1,5 @@
-# java-getting-started
+# EGIS Coding Challenge :: Food Trucks
+================================================
 
 A barebones Java app, which can easily be deployed to Heroku.
 
