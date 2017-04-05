@@ -3,9 +3,9 @@
 
 An web application that uses [DataSF](http://www.datasf.org/) service to tell users what types of food trucks might be found near a specific location on a San Francisco Map.
 
-### The Application is hosted on ###: https://achavanga-foodtruck.herokuapp.com/
+#### The Application is hosted on : https://achavanga-foodtruck.herokuapp.com/
 
-### The Repository is Hosted on ###: https://github.com/achavanga/FoodTruck_Challenge/
+#### The Repository is Hosted on : https://github.com/achavanga/FoodTruck_Challenge/
 
 This application supports the [Getting Started with Java on Heroku](https://devcenter.heroku.com/articles/getting-started-with-java) article - check it out.
 
