@@ -1,7 +1,7 @@
 /*
  *  (c) 2013 FNB
  */
-package za.co.camel;
+package za.co.chavanga.camel;
 
 import javax.ejb.Startup;
 import javax.enterprise.context.ApplicationScoped;

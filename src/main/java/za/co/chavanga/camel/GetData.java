@@ -1,4 +1,4 @@
-package za.co.camel;
+package za.co.chavanga.camel;
 
 import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientResponse;
@@ -10,7 +10,7 @@ import com.sun.jersey.core.util.MultivaluedMapImpl;
 import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 import javax.ws.rs.core.MultivaluedMap;
 import org.codehaus.jackson.map.ObjectMapper;
-import za.co.camel.model.TruckData;
+import za.co.chavanga.camel.model.TruckData;
 
 /**
  * File Name : GetData.java Project Name : SparkTest

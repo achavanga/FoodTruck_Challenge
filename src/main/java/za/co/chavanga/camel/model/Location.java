@@ -1,4 +1,4 @@
-package za.co.camel.model;
+package za.co.chavanga.camel.model;
 
 /**
  * File Name    : Location.java
