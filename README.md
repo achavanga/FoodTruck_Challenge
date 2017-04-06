@@ -42,13 +42,20 @@ The application uses single page with the main page located in src/main/resource
 ### What I would have done better if I had time.
 
 To make the application faster I could have written a service that automatically downloads the copy of DataSF Food Truck data once a day and save it in a local database or a .json file. In this way, the application will just query the database when a user performs a search instead of calling the DataSF each time one searches on the application. I was thinking of using [Apache Camel](http://camel.apache.org/) to do scheduling and save the data in Postgres DB or file.
+
 I could have taken advantage of the WebSQL in HTML5 to cache the copy of DataSF data.  
+
 I could have added filters on the screen so that users can add more search parameters that can help in improving the results that the get back from the service.
+
 I could have added a Help menu so that user learn on how to use the application.
+
 The Unit, Front-end and integration tests using JUnit or Mockito.
+
 I could use Google analytic to record traffic to my website.
 
-I enjoyed taking part in this challenge as I was able to use new tools that I haven't used before. I will continue to refactor and perfect this application to include the above shortfalls.
+### Conclusion
+
+I enjoyed taking part in this challenge as I was able to use new tools that I haven't used before like Spark and Heroku. I will continue to refactor and perfect this application to include the above shortfalls.
 
 ## Documentation
 
