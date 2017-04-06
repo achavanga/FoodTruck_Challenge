@@ -32,7 +32,7 @@ The application was developed using these open source technologies:
 
 I decided to use the above technologies because:
 - I wanted to learn how to use Spark Java Web Framework and Freemaker.
-- I wanted to learn how to Deploy to Heroku Cloud Application Platform.
+- The application is hosted on Heroku Cloud Platform as I wanted to learn how to Deploy to Heroku.
   
 I also used Spark Java because it is easy to use and to deploy to Heroku. The application focuses on the front-end as it takes advantage of using the [DataSF](http://www.datasf.org/) datasource directly. 
 I decided to download the bootstrap CSS so as to speed up my development as they are freely available bootstrap templates on google. I used Google Mapp API because I am familiar with it and is easy to use.
