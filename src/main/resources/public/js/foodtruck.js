@@ -34,16 +34,6 @@ $(function () {
                 markers = [];
                 $.each(trucks, function (idx, truck) {
 
-                    // Fetch the nearest trees to each truck
-                    $.ajax({
-                        url: "https://data.sfgov.org/resource/2zah-tuvt.json",
-                        type: "GET",
-                        data: {
-                            "$select": "min(distance_in_meters(location, 'POINT(" + truck.location.coordinates.join(" ") + ")')) as distance",
-                            "$$app_token": "5i36j9wyiU0itZ0gcdSCmLjNb"
-                        },
-                    }).done(function (closest_tree) {
-
                         // Add a marker for the location of the food truck
                         var marker = new google.maps.Marker({
                             position: new google.maps.LatLng(truck.location.coordinates[1],
@@ -64,7 +54,6 @@ $(function () {
                                     + '<p>Address: ' + truck.address + '</p>'
                                     + '<h5>' + Math.round(parseFloat(truck.range)) + ' meters away.</h5>'
                                     + '<p>Foods: ' + truck.fooditems + '</p>'
-                                    + '<p>Nearest tree is within <em>' + Math.round(parseFloat(closest_tree[0].distance)) + ' meters</em>.</p>'
                                     + '</div>'
                         });
 
@@ -88,7 +77,6 @@ $(function () {
                         });
                         document.getElementById('result-list').innerHTML = '<ul id="result-list" class="list-group">' + str + '</ul>';
 
-                    });
 
                 });
 
