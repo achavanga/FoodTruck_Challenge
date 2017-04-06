@@ -11,7 +11,7 @@ A web application that uses [DataSF](http://www.datasf.org/) service to tell use
 This web application is design to assist residence in San Francisco to search for approved Food Trucks information around their location. The application helps the users to search for Food Trucks based on the food type of their choice. The following happen when the user visits the web application:
 
 - When the web page is initialised and it will show the San Francisco map.
-- When the user types in the food type of their choice and press Search button, the application will call the [DataSF](http://www.datasf.org/) service to perform the search to get top 10 approved food truck with an expiration date greater than today.
+- When the user types in the food type of their choice and press Search button, the application will call the [DataSF](http://www.datasf.org/) service to perform the search to get top 20 approved food truck with an expiration date greater than today.
 - The map will be updated by the results of the search, showing markers of where the Food Trucks are located on the map.
 - The application will show more details on the Food trucks if you click on the marker.
 - The application sidebar will show the more details of the result return from the search.
@@ -49,9 +49,8 @@ I could have added filters on the screen so that users can add more search param
 
 I could have added a Help menu so that user learn on how to use the application.
 
-The Unit, Front-end and integration tests using JUnit or Mockito.
+I could have added Unit, Front-end and integration tests using JUnit, Mockito or Selenium.
 
-I could use Google analytic to record traffic to my website.
 
 ### Conclusion
 

@@ -27,7 +27,7 @@ $(function () {
                     "status": "APPROVED",
                     "$where": "expirationdate > '" + (new Date()).toISOString().replace(/Z/, '') + "'",
                     "$q": search,
-                    "$limit": 10,
+                    "$limit": 20,
                     "$$app_token": "5i36j9wyiU0itZ0gcdSCmLjNb"
                 }
             }).done(function (trucks) {
