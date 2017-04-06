@@ -51,6 +51,9 @@ I could have added a Help menu so that user learn on how to use the application.
 
 I could have added Unit, Front-end and integration tests using JUnit, Mockito or Selenium.
 
+###NOTE
+
+I didn't add the function to locate the user's current location as it was causing issues if the user was not in San Francisco.
 
 ### Conclusion
 
